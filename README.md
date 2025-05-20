@@ -23,3 +23,29 @@ Technologies and Concepts Used in the Problem Domain:
 4. Streamlit for interactive frontend
 5. Similarity Metrics: Cosine similarity, BERT embedding vectors
 
+Workflow
+1. Input Extraction:
+.docx via python-docx
+.pdf via PyPDF2
+Plain text via Streamlit input box
+
+2. Query Construction:
+Use top 300 characters from user text as a search query to fetch Google results using SerpAPI.
+Extract up to 10 snippets.
+Similarity Calculation:
+TF-IDF Cosine Similarity:
+Preprocess and vectorize text.
+Compute cosine similarity between input and web snippets.
+
+3. BERT Semantic Similarity:
+Generate sentence embeddings.
+Compute cosine similarity using sentence-transformers.
+Sentence-Level Analysis:
+Split input text into sentences using NLTK Punkt tokenizer.
+Calculate similarity score of each sentence with all web snippets.
+Flag high-similarity sentences.
+
+4. Output:
+Display total plagiarism percentage (TF-IDF and BERT).
+Show color-coded, sentence-level plagiarism detection.
+Display source snippet scores.
