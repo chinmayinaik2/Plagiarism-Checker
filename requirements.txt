@@ -1,0 +1,9 @@
+streamlit
+requests
+docx2txt
+python-docx
+PyPDF2
+nltk
+scikit-learn
+sentence-transformers
+fpdf
