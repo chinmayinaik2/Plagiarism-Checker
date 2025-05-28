@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: plagiarism-checker
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: streamlit run plag_draft.py --server.port=$PORT --server.enableCORS=false
+    plan: free
