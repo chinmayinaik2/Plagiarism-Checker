@@ -23,7 +23,7 @@ from nltk.tokenize import sent_tokenize
 bert_model = SentenceTransformer('all-MiniLM-L6-v2')
 
 # Your SerpAPI key
-SERPAPI_KEY = "f604a8ddd2e021d02958f28d9f652e5cd498b98d1f0f76d86257da90bd565959"
+SERPAPI_KEY = "Put your own api key"
 
 def extract_text_from_docx(file):
     doc = docx.Document(file)
