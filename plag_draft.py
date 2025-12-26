@@ -23,7 +23,7 @@ from nltk.tokenize import sent_tokenize
 bert_model = SentenceTransformer('all-MiniLM-L6-v2')
 
 # Your SerpAPI key
-SERPAPI_KEY = "Put your own api key"
+SERPAPI_KEY = "c4fe81d93605366a37a9e1bccdf49ddff5d9add96f87995b3e5d9ab4b1d838af"
 
 def extract_text_from_docx(file):
     doc = docx.Document(file)
@@ -220,3 +220,4 @@ if st.button("🔍 Check for Plagiarism"):
                     st.info("No significant matches found")
     else:
         st.warning("Please upload a file or paste some text.")
+
